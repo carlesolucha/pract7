@@ -28,6 +28,6 @@ begin
 	
 	pant <=std_logic_vector(( pp0 + pp1) + (pp2 + pp3) + pp4);
 	p <= pant(4 downto 0);
-	ov_p <= '0' when ((p(9 downto 5)= "00000" and p(4)='0' or (p(9 downto 5)="11111" and p(4)='1')) else '1');
+	ov_p <= '0' when ((p(9 downto 5)= "00000" and p(4)='0') or (p(9 downto 5)="11111" and p(4)='1')) else '1');
 	
 end behavioral;
